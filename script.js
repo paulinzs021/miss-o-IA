@@ -6,72 +6,74 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Quando voce esta com fome, o que vocefaz?
+        enunciado: "Ao pesquisar sobre profissões para o futuro, você descobre que muitas vagas agora exigem conhecimento em Inteligência Artificial. Qual é a sua primeira reação?",
         alternativas: [
             {
-                texto:  "Como alguma coisa",
-                afirmacao: "afirmacao"
+                texto: "Fico preocupado, pois prefiro carreiras mais tradicionais e humanas.",
+                afirmacao:[
+                    "Você iniciou sua jornada com receio das mudanças tecnológicas no mercado de trabalho.",
+                    "Você não iniciou sua jornada com receio das mudanças tecnológicas no mercado de trabalho",
+                ],
             },
             {
-                texto: "Espero até a próxima refeição",
-                afirmacao: "afirmacao"
+                texto: "Fico empolgado, adoro tecnologia e quero aprender mais sobre isso.",
+                afirmacao: [
+                    "Desde o início, você abraçou a inovação como uma oportunidade de crescimento.",
+                    "Desde o início, você não abraçou a inovação como uma oportunidade de crescimento.",
+                ]
             }           
-            
         ]
     },
     {
-        enunciado: "O que você faz depois da escola",
+        enunciado: "Seu professor pede um relatório avaliando o impacto da automação na sua área de interesse. Como você decide conduzir essa pesquisa?",
         alternativas: [
             {
-                texto:"Faço as tarefas",
-                afirmacao:"afirmacao"
+                texto: "Uso uma IA para resumir artigos complexos e organizar os tópicos principais mais rápido.",
+                afirmacao: "Na hora de estudar, você aprendeu a usar ferramentas digitais para acelerar sua produtividade."
             },
             {
-                texto: "Jogo videogame ou mexo no celular",
-                afirmacao:"afirmacao"
+                texto: "Consulto livros na biblioteca e entrevisto profissionais da área para ter visões reais.",
+                afirmacao: "Você preferiu valorizar as conexões humanas e fontes clássicas para embasar seu conhecimento."
             }
         ]
     },
     {
-        enunciado: "Quando você acorda de manhã, o que faz primeiro?"
-            {
-                texto:"Escovo os dentes",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto:"Olho o celular",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
-    },
-    {
-        enunciado: "O que você faz quando está chovendo?",
+        enunciado: "Durante um debate na sala, surge a questão: 'A IA vai substituir a criatividade humana nas artes e no design?'. Qual o seu posicionamento?",
         alternativas: [
             {
-                texto:"Fico em casa.",
-                afirmacao:"afirmacao"
+                texto: "Sim, os algoritmos já conseguem imitar qualquer estilo e vão dominar o mercado criativo.",
+                afirmacao: "No debate sobre criatividade, você adotou uma postura realista sobre o avanço técnico das máquinas."
             },
             {
-                texto:"Saio com um guarda-chuva.",
-                afirmacao:"afirmacao"
+                texto: "Não, a máquina apenas combina dados, mas a emoção e a vivência humana são insubstituíveis.",
+                afirmacao: "Você defendeu que a essência da arte depende exclusivamente da sensibilidade humana."
             }
-            
         ]
     },
     {
-        enunciado: "Quando você está com sono, o que faz?",
+        enunciado: "Você recebeu a tarefa de criar a identidade visual de um projeto escolar. Qual caminho você escolhe?",
         alternativas: [
             {
-                texto: "Vou dormir.",
-                afirmacao:"afirmacao"
+                texto: "Faço um rascunho próprio no papel ou software de desenho para garantir algo 100% autoral.",
+                afirmacao: "No momento prático, você escolheu expressar sua identidade através do seu próprio talento técnico."
             },
             {
-                texto: "Continuo mexendo no celular.",
-                afirmacao:"afirmacao"
+                texto: "Utilizo um gerador de imagens por prompt para criar um conceito visual moderno e rápido.",
+                afirmacao: "Você optou por atuar como um diretor de arte, guiando a tecnologia para materializar suas ideias."
             }
-            
-            
+        ]
+    },
+    {
+        enunciado: "No trabalho final do semestre, um colega de grupo copiou e colou um texto gerado por IA sem fazer nenhuma alteração ou checagem de fatos. O que você faz?",
+        alternativas: [
+            {
+                texto: "Peço para revisarmos juntos, pois a IA pode inventar dados falsos e o trabalho precisa da nossa identidade.",
+                afirmacao: "No fim das contas, você mostrou senso crítico e entendeu que o toque humano é o filtro antierros da tecnologia."
+            },
+            {
+                texto: "Deixo como está, afinal o texto faz sentido e economizou o tempo de todo mundo.",
+                afirmacao: "No fim das contas, você escolheu priorizar a eficiência prática e a entrega rápida dos resultados automatizados."
+            }
         ]
     },
 ];
@@ -90,7 +92,7 @@ function mostraPergunta() {
     caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
-Não, acredito que o desempenho escolar e as notas são os principais indicadores da inteligência de um estudante
+
 function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
@@ -114,3 +116,20 @@ function mostraResultado(){
 }
 
 mostraPergunta();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
